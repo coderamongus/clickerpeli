@@ -14,8 +14,9 @@ function kertoin(){
     if (number < kertoinHinta){
 
     } else {
+        number = number - kertoinHinta
         multiplier = multiplier + 1
         kertoinHinta = kertoinHinta + 100
-        parseInt(document.getElementById("number").innerHTML) 
+        document.getElementById("number").innerHTML = number 
     }
 }
