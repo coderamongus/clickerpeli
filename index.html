@@ -5,18 +5,47 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     </head>
     <body>
-        <center>
-           <div class="keksi">
-                <input type="image" id="isonappula" src="media/keksi.png" onclick="arvonlisa()"/>
+        <div class="kaikki">
+
+            <div class="keksi">
+                <input type="image" id="isonappula" src="media/robux.png" onclick="arvonlisa()"/>
             </div>
+
             <div class="laskuri">
                 <span id="number">0</span>
             </div>
+        </div>    
 
-            <div class="upgrade">
-                <input type="button" value="Kertoin" id="tuplaklikkaus" onclick="kertoin()">
+        <div class="kuvakkeet">
+            <div class="ala">
+                <input type="image" src="media/deepwoken.png" value="Kertoin" id="tuplaklikkaus" onclick="kertoin()">
+                <h1>Deepwoken</h1>
+                <p>Nostaa klikkejen tehokkuutta</p>
+                <h4>Hinta: </h4> <span id="kertoinhinta"></span>
             </div>
-        </center>
+            <div class="ala">
+                <input type="image" src="media/slavaliivi.png" value="Autoclicker" id="autoklikkaaja" onclick="autoklikkaus1()">
+                <h1>Kovis Slava</h1>
+                <p>Kovistelee muilta lounasrobuxeja</p>
+                <h4>Hinta: </h4> <span id="autoHinta1"></span>
+            </div>
+            <div class="ala">
+                <input type="image" src="media/babuslav.png" value="Autoclicker 2" id="autoklikkaaja2" onclick="autoklikkaus2()">
+                <h1>Babu Slava</h1>
+                <p>Kerjää Robuxia</p>
+                <h4>Hinta: </h4> <span id="autoHinta2"></span>
+            </div>
+            <div class="ala">
+                <input type="image" src="media/slavaauto.png" value="Autoclicker 3" id="autoklikkaaja3" onclick="autoklikkaus3()">
+                <h1>Slava Auto</h1>
+                <p>Kuljettaa Robuxia luoksesi</p>
+                <h4>Hinta:</h4> <span id="autoHinta3"></span>
+
+            </div>
+        </div>
+
+       
+        
         
         <script src="koodi.js"> </script>
     </body>
